@@ -1,0 +1,22 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Note {
+  id                  String   @id @default(uuid())
+  title               String   @default("")
+  content             String?
+  items               String   @default("[]") // Stored as JSON string
+  users               String   @default("[]") // Stored as JSON string
+  owner               String?
+  isCollaborationOpen Boolean  @default(false)
+  accessCode          String?
+  variant             String   @default("default")
+  lastEdited          DateTime @default(now())
+  createdAt           DateTime @default(now())
+}

@@ -1,0 +1,37 @@
+/* Basic Editor Styles */
+.ProseMirror {
+    outline: none;
+}
+
+.ProseMirror ul[data-type="taskList"] {
+    list-style: none;
+    padding: 0;
+}
+
+.ProseMirror ul[data-type="taskList"] li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.ProseMirror ul[data-type="taskList"] li>label {
+    margin-right: 0.5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.ProseMirror ul[data-type="taskList"] li>div {
+    flex: 1;
+}
+
+.ProseMirror ul[data-type="taskList"] li[data-checked="true"]>div {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.ProseMirror blockquote {
+    border-left: 3px solid currentColor;
+    padding-left: 1rem;
+    margin-left: 0;
+    opacity: 0.8;
+}

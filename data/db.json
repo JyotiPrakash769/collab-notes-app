@@ -1,0 +1,47 @@
+[
+  {
+    "id": "e28dd7aa-3e2a-4106-9932-81c506593953",
+    "title": "heheh",
+    "items": [
+      "hehe"
+    ],
+    "content": "<p>hehe</p>",
+    "time": "Just now",
+    "variant": "default",
+    "users": [
+      "Subasish",
+      "SUBASIS"
+    ],
+    "owner": "Subasish",
+    "isCollaborationOpen": true,
+    "accessCode": "2039",
+    "lastEdited": 1766687210715
+  },
+  {
+    "id": "16e9c220-6660-42b3-b2a1-207a66188076",
+    "title": "HEllo SOFTIE",
+    "items": [],
+    "content": "",
+    "time": "Just now",
+    "variant": "default",
+    "users": [
+      "Jyoti Prakash Malla"
+    ],
+    "isCollaborationOpen": true,
+    "accessCode": "6697",
+    "lastEdited": 1766687093577,
+    "owner": "Jyoti Prakash Malla"
+  },
+  {
+    "id": "50b6debd-fbca-4c6a-853c-f9de84144842",
+    "title": "",
+    "items": [],
+    "content": "",
+    "time": "Just now",
+    "variant": "default",
+    "users": [],
+    "isCollaborationOpen": false,
+    "accessCode": "",
+    "lastEdited": 1766687090001
+  }
+]
