@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📔 Colab Note – Real-time Collaborative Workspace
 
-## Getting Started
+**Colab Note** is a premium, high-performance collaborative note-taking application designed for focus and seamless teamwork. Built with a modern tech stack, it features a cinematic user experience, real-time synchronization, and a beautiful dark-mode interface.
 
-First, run the development server:
+🚀 **[View Live Demo](https://collab-notes-app-eta.vercel.app)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **🎬 Cinematic Experience**: Immersive Home Screen with scroll-triggered animations and responsive typography.
+- **👥 Real-time Collaboration**: Shared editing sessions with zero-latency feeling using database-backed synchronization.
+- **🟢 Live Presence**: Visual indicators showing active collaborators with pulsing "Live" status and user avatar groups.
+- **🛡️ Secure Sessions**: Private collaboration via 4-digit access codes for invite-only access.
+- **📚 Library Management**: Organize your workspace with a centralized library, featuring "Manage mode" with interactive note deletion.
+- **📱 PWA Ready**: Install Colab Note as a native app on Desktop, Android, or iOS.
+- **☁️ Cloud Database**: Persistence powered by Prisma and Neon (PostgreSQL) for global accessibility.
+- **💅 Premium Design**: Built with Material UI and Framer Motion for glassmorphism effects and smooth transitions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Database**: [PostgreSQL (Neon)](https://neon.tech/)
+- **ORM**: [Prisma](https://www.prisma.io/)
+- **Styling**: [Material UI (MUI)](https://mui.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Editor Core**: [Tiptap](https://tiptap.dev/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Local Setup
 
-## Deploy on Vercel
+Follow these steps to run Colab Note on your machine:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/collab-notes-app.git
+   cd collab-notes-app
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables**:
+   Create a `.env` file in the root directory and add your PostgreSQL connection string:
+   ```env
+   DATABASE_URL="postgresql://user:password@host:port/database?sslmode=require"
+   ```
+
+4. **Initialize the Database**:
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+5. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📱 PWA Support
+
+Colab Note is a fully functional Progressive Web App.
+- **Desktop**: Click the "Install" icon in the Chrome/Edge address bar.
+- **Mobile**: Use "Add to Home Screen" from your browser menu.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+---
+
+Designed with ❤️ for modern collaboration.
